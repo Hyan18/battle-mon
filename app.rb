@@ -1,5 +1,6 @@
 require 'sinatra'
 
+# to run using shotgun use command
 # shotgun app.rb -p 4567
 
 set :session_secret, 'super secret'
@@ -17,7 +18,7 @@ get '/random-cat' do
   erb(:index)
 end
 
-get '/cat-name' do
+get '/cat-form' do
   erb(:form)
 end
 
